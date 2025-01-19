@@ -23,7 +23,7 @@ Odd Hobby Finder is a platform for discovering, sharing, and connecting over unc
 
 ### Deployment
 - **Frontend**: Vercel or Netlify for quick deployment.
-- **Backend**: Heroku for scalable backend deployment.
+- **Backend**: Heroku for scalable backend deployment
 
 ## Why This Project
 - **Interest and Creativity**: Users can discover and share unique hobbies.
