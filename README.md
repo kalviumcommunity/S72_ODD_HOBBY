@@ -14,16 +14,16 @@ Odd Hobby Finder is a platform for discovering, sharing, and connecting over unc
 
 ### Frontend
 - **Framework**: React with Vite for fast development.
-- **UI Library**: Material-UI or Tailwind CSS for a clean, responsive design.
+- **UI Library**: Tailwind CSS for a clean, responsive design.
 
 ### Backend
-- **Server**: Node.js with Express for building robust APIs.
+- **Server**: Node.js with Express for building APIs.
 - **Database**: MongoDB with Mongoose for efficient data storage.
 - **Authentication**: Firebase Authentication for secure user login.
 
 ### Deployment
-- **Frontend**: Vercel or Netlify for quick deployment.
-- **Backend**: Heroku for scalable backend deployment.
+- **Frontend**: Vercel or Netlify for frontend deployment.
+- **Backend**: Heroku for backend deployment.
 
 ## Why This Project
 - **Interest and Creativity**: Users can discover and share unique hobbies.
