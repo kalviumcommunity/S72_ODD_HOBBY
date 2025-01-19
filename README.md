@@ -31,4 +31,3 @@ Odd Hobby Finder is a platform for discovering, sharing, and connecting over unc
 - **Technical Growth**: Covers essential web development skills, from frontend to backend.
 - **Skill Development**: Involves full-stack development, user authentication, and database management.
 - **Unique Value**: Provides a simple, engaging platform for quirky hobbies.
-
