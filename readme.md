@@ -1,7 +1,7 @@
-# Odd Hobby Finder
+# Unconventional Ventures
 
 ## Project Overview
-Odd Hobby Finder is a platform for discovering, sharing, and connecting over unconventional hobbies. It creates a vibrant community where users explore odd hobbies, learn about them, and interact with like-minded individuals. Users can create hobby profiles, share detailed descriptions, post photos, and provide resources. The platform encourages community engagement through comments and ratings, increasing a sense of belonging and shared interest. Odd Hobby Finder promotes the exploration of unique passions and helps users find new and interesting activities to pursue.
+Odd Hobby Finder is a platform for discovering, sharing, and connecting over unconventional hobbies that have the potential to turn into professions. It creates a vibrant community where users explore odd hobbies, learn about them, and interact with like-minded individuals. Users can create hobby profiles, share detailed descriptions, post photos, and provide resources. The platform encourages community engagement through comments and ratings, increasing a sense of belonging and shared interest. Odd Hobby Finder promotes the exploration of unique passions and helps users find new and interesting activities to pursue, with an emphasis on those who have successfully transformed their hobbies into full-time careers.
 
 ## Key Features
 - **User Authentication**: Secure login and registration.
