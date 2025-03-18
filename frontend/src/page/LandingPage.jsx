@@ -1,6 +1,6 @@
 import React from 'react';
 import '/styles/LandingPage.css';
-import Button from '../components/button';
+import Button from '../Components/Button';
 
 const LandingPage = () => {
   return (
