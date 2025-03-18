@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
-import MoodBasedHobbyGenerator from './pages/MoodBasedHobbyGenerator';
+import LandingPage from "./page/LandingPage";
+import MoodBasedHobbyGenerator from './page/MoodBasedHobbyGenerator';
 
 function App() {
   return (
