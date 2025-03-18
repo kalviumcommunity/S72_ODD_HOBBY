@@ -26,3 +26,4 @@ The **Odd Hobby Generator** is designed to help users discover new passions in a
 - **React Router**: Enables routing for multi-page navigation.
 - **CSS**: Provides styling and ensures a consistent look and feel.
 
+ee
