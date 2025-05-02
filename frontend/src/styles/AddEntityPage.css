@@ -1,0 +1,103 @@
+.add-entity-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.add-entity-page h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.add-entity-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.add-entity-page input[type="text"] {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.add-entity-page input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.add-entity-page button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-entity-page button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.add-entity-page button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.add-entity-page p.error-message {
+  color: #e74c3c;
+  font-weight: 600;
+  margin-top: -12px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.add-entity-page h2 {
+  color: #34495e;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 6px;
+}
+
+.add-entity-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #2c3e50;
+}
+
+.add-entity-page ul li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+@media (max-width: 480px) {
+  .add-entity-page {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .add-entity-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .add-entity-page button {
+    font-size: 1rem;
+  }
+}
