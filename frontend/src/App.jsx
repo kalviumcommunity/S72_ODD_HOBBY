@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./page/LandingPage";
 import MoodBasedHobbyGenerator from './page/MoodBasedHobbyGenerator';
-import AddEntityPage from './page/AddEntityPage';
+import AddHobbies from './page/AddHobbiesPage';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/mood" element={<MoodBasedHobbyGenerator />} />
-        <Route path="/add-entity" element={<AddEntityPage />} />
+        <Route path="/add-hobbies" element={<AddHobbies />} />
       </Routes>
     </Router>
   );

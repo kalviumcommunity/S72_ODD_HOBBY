@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/AddEntityPage.css';
 
-const AddEntityPage = () => {
+const AddHobbies = () => {
   const [hobbies, setHobbies] = useState([]);
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
@@ -66,4 +66,4 @@ const AddEntityPage = () => {
   );
 };
 
-export default AddEntityPage;
+export default AddHobbies;
