@@ -7,7 +7,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleAddHobbiesClick = () => {
-    navigate('/add-entity');
+    navigate('/add-hobbies');
   };
 
   return (
