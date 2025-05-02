@@ -6,6 +6,8 @@ const AddHobbies = () => {
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [editingId, setEditingId] = useState(null);
+  const [editingName, setEditingName] = useState('');
 
   // Fetch hobbies from server or initialize with empty list
   const fetchHobbies = async () => {
@@ -38,6 +40,36 @@ const AddHobbies = () => {
     setName(''); // Clear input field
   };
 
+  // Handle delete hobby
+  const handleDelete = (id) => {
+    setHobbies(hobbies.filter(hobby => (hobby._id || hobby.id) !== id));
+  };
+
+  // Handle start editing hobby
+  const handleEdit = (id, currentName) => {
+    setEditingId(id);
+    setEditingName(currentName);
+  };
+
+  // Handle cancel editing
+  const handleCancelEdit = () => {
+    setEditingId(null);
+    setEditingName('');
+  };
+
+  // Handle save edited hobby
+  const handleSaveEdit = (id) => {
+    if (!editingName.trim()) return;
+    setHobbies(hobbies.map(hobby => {
+      if ((hobby._id || hobby.id) === id) {
+        return { ...hobby, name: editingName };
+      }
+      return hobby;
+    }));
+    setEditingId(null);
+    setEditingName('');
+  };
+
   return (
     <div className="add-entity-page">
       <h1>Add Your Odd Hobbies</h1>
@@ -59,7 +91,34 @@ const AddHobbies = () => {
       {loading && <p>Loading...</p>}
       <ul className="hobbies-list">
         {hobbies.map((hobby) => (
-          <li key={hobby._id || hobby.id}>{hobby.name}</li>
+          <li key={hobby._id || hobby.id}>
+            {editingId === (hobby._id || hobby.id) ? (
+              <>
+                <input
+                  type="text"
+                  value={editingName}
+                  onChange={(e) => setEditingName(e.target.value)}
+                  className="add-entity-input"
+                />
+                <button onClick={() => handleSaveEdit(hobby._id || hobby.id)} className="add-entity-button">
+                  Save
+                </button>
+                <button onClick={handleCancelEdit} className="add-entity-button">
+                  Cancel
+                </button>
+              </>
+            ) : (
+              <>
+                {hobby.name}
+                <button onClick={() => handleEdit(hobby._id || hobby.id, hobby.name)} className="add-entity-button">
+                  Edit
+                </button>
+                <button onClick={() => handleDelete(hobby._id || hobby.id)} className="add-entity-button">
+                  Delete
+                </button>
+              </>
+            )}
+          </li>
         ))}
       </ul>
     </div>
